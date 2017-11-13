@@ -1,48 +1,42 @@
-<!29.10.2017 SALA TYMOTEUSZ
- FORMULARZ_LEKCJA1_WARSZTATY_SEALCODETYMOTEUSZ SALA>
-<!doctype html>
-<html lang=”pl”>
-<head>
-<title>Formularz-warsztaty-sealcode</title>
-<meta charset="UTF-8">
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      prdom01.html
+    </title>
 </head>
 <body>
 
-<form action="http://www.jakaswitryna.com/profile.php">
+  <form action="http://www.jakaswitryna.pl/formularz.php">
     <fieldset style="width: 650px;">
-        <legend>Szczegóły konta:</legend>
-        <label>Imię:
-        <input type="text" name="name" /></label><br /><br />
-        <label>Email:
-        <input type="text" name="email" /></label><br />
+      <legend>Szczegóły konta</legend>
+      <label>Imię<br />
+      <input type="text" name="imie"/> </label><br />
+      <label>Email<br />
+      <input type="text" name="email"/> </label><br />
     </fieldset>
-</form>
-
-  <br />
-
-<form action="http://www.jakaswitryna.com/profile.php">
+    <br />
     <fieldset style="width: 650px;">
-        <legend>Kilka informacji o Tobie:</legend><br />
-        Czy odwiedzisz nas ponownie?<br />
-        <input type="radio" name="question"
-            value="yes" /> Tak
-       <input type="radio" name="question"
-           value="no" /> Nie
-       <input type="radio" name="question"
-           value="maby" /> Może
-
-   <br /><br />
-
-   <form action="http://www.jakaswitryna.com/profile.php">
-     Komentarz:<br />
-        <textarea name="comment" cols="50" rows="7"></textarea>
-   </form>
-
- <form action="http://www.jakaswitryna.com/profile.php">
-   <input type="checkbox" name="update" checked="checked"/> Chce być informowany o aktualizacjach.
- <br />
-   <input type="submit" name="subscribe" value="Prześlij informacje" />
+      <legend>Kilka informacji o Tobie</legend>
+      <p>Czy odwiedzisz nas ponownie?
+        <br />
+        <input type="radio" name="opcja1" value="Tak"/> Tak
+        <input type="radio" name="opcja2" value="Nie"/> Nie
+        <input type="radio" name="opcja3" value="Może"/> Może
+      </p>
+      <p>Komentarz:
+        <br />
+        <textarea name="comments" cols ="50" rows="6"></textarea>
+      </p>
+      <p>
+        <input type="checkbox" name="checkbox" value="subscribe"/> Chcę być informowany o aktualizacjach.
+      </p>
+     <p>
+       <input type="submit" name="submit" value="Prześlij informacje"/>
+     </p>
     </fieldset>
-</form>
+  </form>
 </body>
 </html>
