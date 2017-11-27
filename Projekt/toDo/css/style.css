@@ -1,0 +1,91 @@
+html, body {
+	height: 100%;
+}
+
+body{
+	background: url('../img/background.jpg') no-repeat;
+	background-size: cover;
+	
+	display: flex;
+	justify-content: center; /* 0.5 - wysrodkowanie wzgledem poziomu*/
+	align-items: center; /* 0.5 - wysrodkowanie wzgledem pionu*/
+}
+
+/* App container */
+
+.app-container {
+	max-width: 450px;
+	width: 100%;
+	padding: 25px;
+	
+	background: rgba(255, 255, 255, 0.5); /* 0.5 - przezroczystość */
+	box-shadow: 0 0 62px rgba(0,0,0,0.1);
+}
+
+.app-container h2 {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: overline;
+	
+}
+
+/* New task */
+.new-task-container {
+	margin-bottom: 20px;
+	margin-left: 40px;
+	width: 390px;
+}
+
+/* Task list */
+.tasks-container ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Single task */
+.single-task {
+	margin-bottom: 0;
+}
+
+.btn-primary {
+	background-color: dodgerblue;
+	height: 40px;
+	width: 78px;
+	border-radius: 6px;
+	padding: 12px 20px;
+}
+
+.form-control {
+	background-color: lightyellow;
+	width: 70%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   box-sizing: border-box;
+	border-radius: 6px;
+}
+
+.btn-danger {
+	background-color: red;
+	height: 40px;
+	width: 40px;
+	border-radius: 6px;
+}
+
+.btn-default {
+	background-color: white;
+	height: 40px;
+	width: 40px;
+	border-radius: 6px;
+}
+
+.btn-success {
+	background-color: limegreen;
+	height: 40px;
+	width: 40px;
+	border-radius: 6px;	
+}
+
+
