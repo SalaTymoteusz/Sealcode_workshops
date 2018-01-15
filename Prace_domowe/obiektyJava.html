@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Zadanie 1.</title>
+	</head>
+	<body>
+		<h1 id="heading">xyz</h1>
+		<p id="paragraph-one">xyz</p>
+		<p id="paragraph-two">xyz</p>
+		<p id="paragraph-three">xyz</p>
+		<p id="paragraph-four">xyz</p>
+		
+		<script>
+			var el = document.getElementById('heading');
+			el.innerHTML = 'Tymoteusz Sala';
+			
+			
+			var daysOfWeek = ['niedziela', 'poniedziałek', 'wtorek', 'środa', 'czwartek', 'piątek', 'sobota'];
+			var months = ['styczeń', 'luty', 'marzec', 'kwiecień', 'maj', 'czerwiec', 'lipiec', 'sierpień', 			'wrzesień', 'październik', 'listopad', 'grudzień'];
+
+			var d = new Date();
+			var day = daysOfWeek[d.getDay()];
+			var numberMonth = d.getDate().toString();
+			var month = months[d.getMonth()+1];
+			var year = d.getFullYear();
+			var hours = d.getHours();
+			var minutes = d.getMinutes();
+			var secound = d.getSeconds();
+			var millisecound = d.getMilliseconds();
+					
+			var el = document.getElementById('paragraph-one');
+			el.innerHTML = day + ' ' + numberMonth + ' ' + month + ' ' + year + '<br /> ' + hours + ':' + minutes + ':' + secound + ':' + millisecound;
+			
+			
+			var str = "Podstawą szczęścia jest wolność, a podstawą wolności odwaga."
+			var char = str.charAt(13);
+			var res = str.substring(7,12);
+			var pla = str.indexOf('ą');
+			var howmany = str.length;
+			var sentence = str.replace('Podstawą', 'Fundamentem');
+			var pla2 = str.indexOf(',');
+			var res2 = str.substring(0,pla2);
+			var res3 = str.substring(pla2+2,howmany);
+			
+			function reverseString(str) {
+				
+				var splitString = str.split("");
+				var reverseArray = splitString.reverse();
+				var joinArray = reverseArray.join("");
+				
+				return joinArray;
+			}
+			
+			
+			var el = document.getElementById('paragraph-two');
+			
+			
+			el.innerHTML = 'Operuję na zdaniu: Podstawą szczęścia jest wolność, a podstawą wolności odwaga.' +
+				'<br />' +
+				'Trzynastym znakiem w tym zdaniu jest: ' + '(' + char + ').' + '<br />' +
+				'Znaki pomiędzy 7. a 12. pozycją to: ' + '(' + res + ').' + '<br />' +
+				'Pierwszy raz znak "ą" pojawia się na miejscu: ' + '(' + pla + ').' + '<br />' + 
+				'Ten ciąg ma: ' + '(' + howmany + ') znaków.' + '<br />' +
+				'Po zamianie "podstawą" na "fundamentem" mamy: ' + '(' + sentence + ').' + '<br />' +
+				'Część zdania przed przecinkiem to: ' + '(' + res2 + ').' + '<br />' +
+				'Druga część zdania po odwróceniu to: ' + '(' + reverseString(res3) + ').' + '<br />';
+			
+			
+			var wartosc1 = (5*5)-(4*1*6);
+			var wartosc2 = Math.sqrt(wartosc1);
+			var wartosc3 = (((-5)-wartosc2)/(2*1));
+         var wartosc4 = (((-5)+wartosc2)/(2*1));
+			var el = document.getElementById('paragraph-three');
+			
+			el.innerHTML = 'Zadanie 1. Mam funkcję kwadratową:' + '<br />' +
+				'f(x) = x^2 + 5x + 6' + '<br /> <br />' +
+				'Wyróżnik tego trójmianu to: ' + wartosc1 + '.' + '<br />' +
+				'Pierwiastek kwadratowy tego wyróżnika to: ' + wartosc2 + '.' + '<br />' +
+				'Miejscami zerowymi tej funkcji są: ' + wartosc3 + ' i ' + wartosc4 + '.';
+			
+			
+			var el = document.getElementById('paragraph-four');
+			
+			el.innerHTML = 'Zadanie 2. Obliczam wartość funkcji:' + '<br />' +
+				'f(x) = sqrt(|sin(ln(2^(x))) + max(0, x) + |-e^(2x) + min(-1, x)||)' + '<br /> <br />' +
+				'Mój wynik to: ' + wartosc1 + '.' + '<br />' +
+				'Wynik w notacji wykładniczej to: ' + wartosc2 + '.' + '<br />' +
+				'Po zaokrąleniu wyniku w górę mam: ' + wartosc3 + ' i ' + wartosc4 + '.';
+			
+
+		
+		</script>
+	</body>
+</html>
