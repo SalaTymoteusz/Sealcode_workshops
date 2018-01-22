@@ -36,26 +36,20 @@ function prepareTaskHTML(title) {
 function bindAddTaskEvents() {
 
 	// On submit
-	newTaskForm.addEventListener('submit', function(event) {
+	newTaskForm.addEventListener('submit', function(event){
 		event.preventDefault();
 
 
 		var title = this.querySelector('input').value;
 
-		var szlaban = true;
-		var tablica = ['', ' ', '  ', '   ', '    ', '     ', '      ', '       ', '        ', '         ', '          '];
-		for(var i=0; i<=title.length; i++){
-			if(title==tablica[i]){
-				szlaban=false;
-			}
+		var szlaban = title.trim();
+
+		if(szlaban === '') {
+			alert("You must write something!");
 		}
-		if(title && szlaban == true) {
+		else {
 			addNewTask(title);
 			document.getElementById("myForm").reset(); //czyszczenie formularza po dodaniu zadania
 		}
-		else {
-			 alert("You must write something!");
-		}
-
 	});
 }
