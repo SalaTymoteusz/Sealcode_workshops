@@ -36,7 +36,7 @@ function prepareTaskHTML(title) {
 function bindAddTaskEvents() {
 
 	// On submit
-	newTaskForm.addEventListener('submit', function() {
+	newTaskForm.addEventListener('submit', function(event) {
 		event.preventDefault();
 
 
